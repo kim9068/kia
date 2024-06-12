@@ -12,6 +12,17 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="css/kia.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                console.log($(window).scrollTop());
+                if($(window).scrollTop()>1300){
+                    $(".row").addClass("animate__fadeInUp");
+                }
+            });
+        });
+    </script>
 </head>
 <body>
     <!-- 내비게이션 바 -------------------------------------------------------------------------->
@@ -49,11 +60,10 @@
                   <li><a href="#">CN</a></li>
                 </ul>
               </li>
-              <li><a href="#">통합검색</a></li>
-              <li><a href="#">로그인</a></li>
+              <li class="rm"><a href="#">통합검색</a></li>
+              <li class="rm"><a href="#">로그인</a></li>
             </ul>
         </div>
-               
         </div>
     </nav>
 
@@ -259,7 +269,7 @@
         </div> 
       </div>
       <!-- 연비효율 ------------------------------------------------>
-      <div id="menu1" class="tab-pane">
+      <div id="menu1" class="tab-pane fade">
         <div class="row">
             <div class="col-sm-4">
                 <div class="box">
@@ -387,7 +397,7 @@
         </div>
       </div>
       <!-- 적재공간 ------------------------------------------------------------------------>
-      <div id="menu2" class="tab-pane">
+      <div id="menu2" class="tab-pane fade">
         <div class="row">
             <div class="col-sm-4">
                 <div class="box">
@@ -516,7 +526,7 @@
         </div>
       </div>
       <!-- 안전성 ---------------------------------------------------------------------------->
-      <div id="menu3" class="tab-pane">
+      <div id="menu3" class="tab-pane fade">
         <div class="row">
             <div class="col-sm-4">
                 <div class="box">
@@ -692,7 +702,7 @@
 </div>
 <!-- NEWS --------------------------------------------------------------------------------->
 <div id="news" class="container">
-    <h3 class="text-center">NEWS</h3>
+    <h3 class="text-center"><b>NEWS</b></h3>
     <div class="row">
         <div class="col-sm-6">
             <img src="img/ev3_pc.jpg" alt="EV3" width="100%" height="100%">
@@ -711,7 +721,7 @@
         </div>
     </div>
 
-    <div class="row">
+    <div class="row animate__animated">
         <div class="col-sm-4">
                 <h4>뉴스</h4>
                 <p>기아, 제11회 스킬 월드컵 성료</p>
