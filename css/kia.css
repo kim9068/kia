@@ -434,9 +434,6 @@
             .navbar-nav li{
                 top:15px;
             }
-            .navbar-collapse li:nth-child(8), .navbar-nav li:nth-child(9){
-                display: none;
-            }
             .navbar-brand{
                 position:absolute;
                 left:0;
@@ -444,6 +441,9 @@
             .navbar-toggle{
                 position:absolute;
                 right:0;  
+            }
+            .navbar-toggle:active .navbar-collapse{
+                background-color: white;
             }
             .navbar-header .topcon{
                 opacity: 1;
@@ -453,6 +453,13 @@
             }
             .navbar-nav .rm, .navbar-nav .dropdown-toggle{
                 display: none;
+            }
+            .navbar-nav li:nth-child(1){
+                margin-top:20px;
+            }
+            .navbar-nav li{
+                margin:0;
+                background-color: rgb(41, 12, 77);
             }
             .topcon li{
                 transform: scale(1.8);
